@@ -1,12 +1,10 @@
-import logo from './logo.svg';
-
-import Body from './components/Body';
-import Head from './components/Head';
-import { Provider } from 'react-redux';
-import store from './utils/store';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import MainContainer from './components/MainContainer';
-import WatchPage from './components/WatchPage';
+import Body from "./components/Body";
+import Head from "./components/Head";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import MainContainer from "./components/MainContainer";
+import WatchPage from "./components/WatchPage";
 
 //rafce
 
@@ -20,8 +18,8 @@ const appRouter = createBrowserRouter([
         element: <MainContainer />,
       },
       {
-        path : "watch",
-        element: <WatchPage />
+        path: "watch",
+        element: <WatchPage />,
       },
     ],
   },
@@ -30,14 +28,13 @@ const appRouter = createBrowserRouter([
 function App() {
   return (
     <Provider store={store}>
-    <div>
-    <Head/>
-    <RouterProvider router={appRouter} />
-    </div>
+      <div>
+        <Head />
+        <RouterProvider router={appRouter} />
+      </div>
     </Provider>
   );
 }
-
 
 // head
 // body
