@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const SideBar = () => {
+const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
   // Early Return pattern
@@ -33,4 +33,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default Sidebar;
