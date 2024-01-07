@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { closeMenu } from '../utils/appSlice';
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { closeMenu } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
-import CommentsContainer from './CommentsContainer';
+import CommentsContainer from "./CommentsContainer";
 
 const WatchPage = () => {
-
   const [searchParams] = useSearchParams();
 
   const dispatch = useDispatch();
@@ -16,7 +15,7 @@ const WatchPage = () => {
   return (
     <div className="flex flex-col w-full">
       <div className="px-5 flex w-full">
-      <div className="p-5">
+        <div className="p-5">
           <iframe
             width="1000"
             height="500"
@@ -32,8 +31,7 @@ const WatchPage = () => {
       </div>
       <CommentsContainer />
     </div>
-    
-  )
-}
+  );
+};
 
-export default WatchPage
+export default WatchPage;

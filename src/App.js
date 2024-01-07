@@ -36,13 +36,4 @@ function App() {
   );
 }
 
-// head
-// body
-//   sidebar
-//      MenuItems
-// MainContainer
-//      ButtonsList
-//      VideoContainer
-//        VideoCard
-
 export default App;
